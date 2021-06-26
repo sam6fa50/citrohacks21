@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	margin-top: -0.2%;
+	margin-left: -0.02%;
+	margin-right: -0.02%;
+}
+
+
+#navbar {
+	font-size: 20px;
+	background-color: rgb(86, 80, 170);
+	color: aliceblue;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	width: 100%;
+}
+
+#navbar span:nth-child(1) {
+	float: left;
+	margin-left: 5%;
+}
+
+
+#navbar span:nth-child(2) {
+	float: right;
+	margin-right: 5%;
+}
+
+.sticky {
+	position: fixed;
+	width: 100%;
+  }
+
+#intro{
+    background-image: url(background2.jpg);
+	background-position-x: center;
+	background-position-y: 80%;
+	color:  rgb(86, 80, 170);
+    font-size: 70px;
+	padding-top: 23%;
+	padding-left: 1%;
+}
+
+table{
+	width: 100%;
+}
+
+#about {
+	word-wrap: normal;
+	border-spacing: 20px;
+}
+
+#about1 {
+	background-color: rgb(112, 107, 173);
+	text-align: center;
+	font-size: 150%;
+	color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid rgb(173, 168, 248)
+}
+
+.about2 {
+	background-color: white;
+	font-size: 120%;
+	color:rgb(86, 80, 170);
+	padding-top: 3%;
+    padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 3%;
+    border: 1px solid rgb(173, 168, 248)
+}
+
+#bar {
+	background-image: url(background2.jpg);
+	background-position-x: center;
+	background-position-y: 80%;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-spacing: 10px;
+	color:rgb(47, 43, 102);
+}
+
+#bar1 {
+	text-align: center;
+	width: 33.33%;
+	font-size: 160%;
+}
+
+#bar2 {
+	text-align: center;
+	font-size: 130%;
+}
+
+
+#team {
+	border-spacing: 20px;
+	color:rgb(47, 43, 102);
+	font-size: 140%;
+	text-align: center;
+}
+
+#footer {
+	width: 100%;
+	background-color: rgb(59, 55, 114);
+	color: white;
+	text-align: center;
+	font-size: 110%;
+	padding: 4%;
+}

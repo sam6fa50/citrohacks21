@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>mainpage</title>
+		<link rel="stylesheet" href="mainpage.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<table>
+			<!--Navbar-->
+			<tr>
+				<td id = "navbar">
+					<span>
+						<a>Medsicle</a>
+					</span>
+					<span>
+						<a>About &nbsp;</a>
+						<a>Team &nbsp;</a> 
+						<a>Sign Up &nbsp;</a>
+						<a>Log In &nbsp;</a>
+					</span>
+				</td>
+			</tr>
+			<script>
+				window.onscroll = function() {myFunction()};
+				
+				var navbar = document.getElementById("navbar");
+				var sticky = navbar.offsetTop;
+				
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				  } else {
+					navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+			<!--Intro-->
+			<tr>
+				<td id = "intro">
+					Medsicle. <br>
+					Medicine, streamlined.
+				</td>
+			</tr>
+			<!--About-->
+			<tr>
+				<table id = "about">
+					<tr>
+						<td id = "about1">
+							<p>
+								<b>Welcome</b> to innovation in medicine. 
+							</p>
+						</td>
+						<td class = "about2">
+							The US ranks <b>last place</b> among the wealthiest nations in the world in terms of healthcare. One of the primary reasons for this is the lack of efficiency in the system. Although the US spends the most (and by a large margin) on healthcare compared to the rest of the world, it still has the worst quality. A lack of a streamlined medical system does not help this problem.
+						</td>
+						<td class="about2" style="color: white; background-color: rgb(112, 107, 173);">
+							Medsicle is a site created by 4 high school students. We wanted to make a project that impacted our community. Medsicle streamlines mediacal information for the user, including their medical information, records, possible doctors and professionals, and even a chat system providing a connection between the user and the professional.
+						</td>
+					</tr>
+				</table>
+			</tr>
+			<!--Bar-->
+			<tr>
+				<table id = "bar">
+					<tr id = "bar1">
+						<td>
+							<i class='fa fa-gears'></i>
+						</td>
+						<td>
+							<i class='fa fa-building'></i>
+						</td>
+						<td>
+							<i class='fa fa-heart'></i>
+						</td>
+					</tr>
+					<tr id = "bar2">
+						<td>
+							Efficient
+						</td>
+						<td>
+							Beneficial
+						</td>
+						<td>
+							Safe
+						</td>
+					</tr>
+					<tr id = "bar3">
+						<td>
+							Medsicle is an efficient method of determining and communicating with professionals that can help patients from the comfort of one's home. 
+						</td>
+						<td>
+							Medsicle is beneficial to users - it streamlines the medical care process so that everyone can have access to the resources necessary to lead healthy lives. 
+						</td>
+						<td>
+							Medsicle allows users to stay safe from home, with doctors and medical reports only a click away. Healing from home has never been easier.
+						</td>
+					</tr>
+				</table>
+			</tr>
+			<!--Team-->
+			<tr>
+				<table id = "team">
+					<tr>
+						<td style="border: 1px solid rgb(112, 107, 173);
+						box-shadow: 2px 2px 2px rgb(173, 168, 248);">
+							<p><b>Sweekrit Bhatnagar</b></p>
+							<p style="font-size: 80%;">I have a lot of experience in webdev, and have coded in Python and Java. I love to play Pokemon!</p>
+						</td>
+						<td style="border: 1px solid rgb(112, 107, 173);
+						box-shadow: 2px 2px 2px rgb(173, 168, 248);">
+							<p><b>Aashrith Bandaru</b></p>
+							<p style="font-size: 80%;">I am experienced in many languages, including Python, Java, HTML/CSS/JS, and am even studying ML/AI. I also like to debate!</p>
+						</td>
+						<td style="border: 1px solid rgb(112, 107, 173);
+						box-shadow: 2px 2px 2px rgb(173, 168, 248);">
+							<p><b>Samyak Anand</b></p>
+							<p style="font-size: 80%;">I am learning how to code in HTML/CSS, but I am experienced in Java, Python, and C#. I love to play Minecraft!</p>
+						</td>
+						<td style="border: 1px solid rgb(112, 107, 173);
+						box-shadow: 2px 2px 2px rgb(173, 168, 248); padding: 0.2%;">
+							<p><b>Sambhav Mehta</b></p>
+							<p style="font-size: 80%;">I am a beginner coder who has an interest in data science and business. I am also love to design.</p>
+						</td>
+					</tr>
+				</table>
+			</tr>
+			<!--Footer-->
+			<table id = "footer">
+				<tr>
+					<td>
+						<a>Sign Up</a> <br>
+						<a>Log In</a> <br> <br>
+						Contact us at: <br>
+						<i class='fa fa-facebook'></i> &nbsp;
+						<i class='fa fa-github'></i> &nbsp;
+						<i class='fa fa-instagram'></i>
+					</td>
+				</tr>
+			</table>
+		</table>
+	</body>
+</html>
