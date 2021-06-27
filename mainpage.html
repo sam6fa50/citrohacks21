@@ -2,14 +2,91 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>mainpage</title>
+		<title>Medsicle Main</title>
 		<link rel="stylesheet" href="mainpage.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			.dropbtn {
+			  background-color: #04AA6D;
+			  color: white;
+			  padding: 16px;
+			  font-size: 16px;
+			  border: none;
+			  cursor: pointer;
+			}
+			
+			.dropbtn:hover, .dropbtn:focus {
+			  background-color: #3e8e41;
+			}
+			
+			#myInput {
+			  box-sizing: border-box;
+			  background-image: url('searchicon.png');
+			  background-position: 14px 12px;
+			  background-repeat: no-repeat;
+			  font-size: 16px;
+			  padding: 14px 20px 12px 45px;
+			  border: none;
+			  border-bottom: 1px solid #ddd;
+			}
+			
+			#myInput:focus {outline: 3px solid #ddd;}
+			
+			.dropdown {
+			  position: relative;
+			  display: inline-block;
+			}
+			
+			.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  background-color: #f6f6f6;
+			  min-width: 230px;
+			  overflow: auto;
+			  border: 1px solid #ddd;
+			  z-index: 1;
+			}
+			
+			.dropdown-content a {
+			  color: black;
+			  padding: 12px 16px;
+			  text-decoration: none;
+			  display: block;
+			}
+			
+			.dropdown a:hover {background-color: #ddd;}
+			
+			.show {display: block;}
+			</style>
 	</head>
 
 	<body>
 		<table>
 			<!--Navbar-->
+
+			<!-- <nav id = "navbar" class = "z-depth-0">
+				<div class="nav-wrapper">
+				<ul id="nav-mobile" class="right">
+					<li class="logged-in">
+						<a href="#" class="white-text modal-trigger" data-target="modal-account">Account</a>
+					</li>
+					<li class="logged-in">
+						<a href="#" class="white-text" id="logout">Logout</a>
+					</li>
+					<li class="logged-in">
+						<a href="#" class="white-text modal-trigger" data-target="modal-create">Create Guide</a>
+					</li>
+					<li class="logged-out">
+						<a href="#" class="white-text modal-trigger" data-target="modal-login">Login</a>
+					</li>
+					<li class="logged-out">
+						<a href="#" class="white-text modal-trigger" data-target="modal-signup">Sign up</a>
+					</li>
+					</span>
+				</ul>
+				</div>
+			</nav> -->
+		<div>
 			<tr>
 				<td id = "navbar">
 					<span>
@@ -62,6 +139,7 @@
 					</tr>
 				</table>
 			</tr>
+			<br>
 			<!--Bar-->
 			<tr>
 				<table id = "bar">
@@ -100,39 +178,84 @@
 					</tr>
 				</table>
 			</tr>
+			<br>
+			<br>
+
+
+			<!--Searching for Doctors-->
+			<!-- <button type="button" id='btn-one' onclick='storeVar(this.value)' value='1'>1</button>
+
+			<input type="text" id = "searching" name = "symptoms"> -->
+			<!-- <form id="form" onsubmit="return false;">
+				<input type="text" id="userInput" />
+				<input type="submit" onclick="othername();" />
+			</form>
+			<script>
+			function othername() {
+				var input = document.getElementById("userInput").value;
+				alert(input);
+			}
+			</script> -->
+
+			<div class = "searchForm">
+				
+			</div>
+
+			<!-- <button type="button" id='btn-two' onclick='storeVar(this.value)' value='2'>2</button>
+
+			<script>
+			function storeVar(value){
+				let amount = value;
+				console.log(amount);
+			}
+			</script> -->
+			<!--The Doctors-->
+			<tr>
+				<table id = "doctors">
+					<tr>
+						<td style="border: 1px solid rgb(112, 107, 173); padding: 0.5% 0.5%">
+							<p><b>Doctor 1</b></p>
+							<p style="font-size: 80%;">Pediatrician</p>
+						</td>
+					</tr>
+				</table>
+			</tr>
 			<!--Team-->
 			<tr>
 				<table id = "team">
 					<tr>
 						<td style="border: 1px solid rgb(112, 107, 173);
-						box-shadow: 2px 2px 2px rgb(173, 168, 248);">
+						padding: 0.5%">
 							<p><b>Sweekrit Bhatnagar</b></p>
 							<p style="font-size: 80%;">I have a lot of experience in webdev, and have coded in Python and Java. I love to play Pokemon!</p>
 						</td>
 						<td style="border: 1px solid rgb(112, 107, 173);
-						box-shadow: 2px 2px 2px rgb(173, 168, 248);">
+						padding: 0.8%">
 							<p><b>Aashrith Bandaru</b></p>
-							<p style="font-size: 80%;">I am experienced in many languages, including Python, Java, HTML/CSS/JS, and am even studying ML/AI. I also like to debate!</p>
+							<p style="font-size: 80%;">I am experienced in many languages, including Python, Java, HTML/CSS/JS, and am studying AI Machine Learning. I also like to debate!</p>
 						</td>
 						<td style="border: 1px solid rgb(112, 107, 173);
-						box-shadow: 2px 2px 2px rgb(173, 168, 248);">
+						padding: 0.5%">
 							<p><b>Samyak Anand</b></p>
-							<p style="font-size: 80%;">I am learning how to code in HTML/CSS, but I am experienced in Java, Python, and C#. I love to play Minecraft!</p>
+							<p style="font-size: 80%;">I am learning how to code in HTML/CSS, but I am experienced in Java, Python, and C#. I also like creating and coding robots!</p>
 						</td>
 						<td style="border: 1px solid rgb(112, 107, 173);
-						box-shadow: 2px 2px 2px rgb(173, 168, 248); padding: 0.2%;">
+						padding: 0.5%;">
 							<p><b>Sambhav Mehta</b></p>
-							<p style="font-size: 80%;">I am a beginner coder who has an interest in data science and business. I am also love to design.</p>
+							<p style="font-size: 80%;">I am a beginner coder who has an interest in data science and business. I also love to design.</p>
 						</td>
 					</tr>
 				</table>
+			<br>
+			<br>
+			<br>
+			<br>
+
 			</tr>
 			<!--Footer-->
 			<table id = "footer">
 				<tr>
 					<td>
-						<a>Sign Up</a> <br>
-						<a>Log In</a> <br> <br>
 						Contact us at: <br>
 						<i class='fa fa-facebook'></i> &nbsp;
 						<i class='fa fa-github'></i> &nbsp;

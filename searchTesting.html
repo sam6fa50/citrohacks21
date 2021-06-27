@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <script type="text/javascript" src="symptomsScript.js"></script>
+</head>
+<body>
+    <form>
+        <p> Symptoms - To describe, use one of the following: Head, Heart, Bones, Lungs, or Mental Health: <input id = "bodyParts"> </p>
+        <label id = "errorCode">Once you are done, hit submit.</label>
+        <button onclick="submit()">Submit</button>
+    </form>
+    <script>
+        var bpvar = "";
+
+        function submit()
+        {
+            bpvar = document.getElementById('bodyParts').value.toLowerCase();
+
+            if (document.getElementById('bodyParts').value.toLowerCase() != "mental health" || document.getElementById('bodyParts').value.toLowerCase() != "head" || document.getElementById('bodyParts').value.toLowerCase() != "heart" || document.getElementById('bodyParts').value.toLowerCase() != "bones" || document.getElementById('bodyParts').value.toLowerCase() != "lungs")
+            {
+                document.getElementById('errorCode').innerHTML = "Sorry, please enter one of the following: Head, Heart, Bones, Lungs, or Mental Health";
+            }
+            else if (document.getElementById('bodyParts').value.toLowerCase() == "mental health" || document.getElementById('bodyParts').value.toLowerCase() == "head" || document.getElementById('bodyParts').value.toLowerCase() == "heart" || document.getElementById('bodyParts').value.toLowerCase() == "bones" || document.getElementById('bodyParts').value.toLowerCase() == "lungs")
+            {
+                document.getElementById('errorCode').innerHTML = "";
+            }
+        } 
+    </script>
+    <br>
+</body>
+</html>
